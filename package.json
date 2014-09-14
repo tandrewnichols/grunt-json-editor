@@ -1,0 +1,59 @@
+{
+  "name": "grunt-json-editor",
+  "description": "Edit json files as part of your build process",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tandrewnichols/grunt-json-editor",
+  "author": {
+    "name": "Andrew Nichols",
+    "email": "tandrewnichols@gmail.com",
+    "url": "http://www.tandrewnichols.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tandrewnichols/grunt-json-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tandrewnichols/grunt-json-editor/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tandrewnichols/grunt-json-editor/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt",
+    "publish": "if echo $USERNAME | grep -cq 'anichols'; then publisher run; fi"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-cov": "^0.3.0",
+    "grunt-mocha-test": "^0.11.0",
+    "grunt-travis-matrix": "0.0.2",
+    "indeed": "^1.0.6",
+    "jshint-stylish": "^0.4.0",
+    "mocha": "git://github.com/tandrewnichols/mocha.git#suppress-stack",
+    "mocha-given": "git://github.com/tandrewnichols/mocha-given.git",
+    "mocha-lcov-reporter": "0.0.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "json",
+    "config",
+    "edit"
+  ],
+  "main": "./tasks/json-editor.js",
+  "config": {
+    "blanket": {
+      "pattern": [
+        "grunt-json-editor/tasks"
+      ]
+    }
+  }
+}
